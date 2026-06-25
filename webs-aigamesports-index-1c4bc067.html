@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏体育 · 简明指南</title>
+    <style>
+        /* 极简留白 · 窄正文 · 温和调色 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2.8rem 1.5rem 4rem;
+        }
+
+        /* Hero 区 */
+        .hero {
+            padding: 1.6rem 0 2rem;
+            border-bottom: 1px solid #e7e5e4;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #292524;
+            margin-bottom: 0.6rem;
+        }
+        .hero .subhead {
+            font-size: 1rem;
+            color: #78716c;
+            max-width: 520px;
+        }
+
+        /* 通用章节 */
+        section {
+            margin: 2.8rem 0;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #44403c;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #a8a29e;
+            padding-left: 0.75rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #3f3f46;
+            font-size: 0.95rem;
+        }
+        a {
+            color: #1c1917;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #57534e;
+        }
+
+        /* 优势卡片 (极简轻描) */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.5rem 0 1.8rem;
+        }
+        .feature-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.1rem 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            border: 1px solid #e7e5e4;
+        }
+        .feature-card h3 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #292524;
+            margin-bottom: 0.2rem;
+        }
+        .feature-card p {
+            font-size: 0.85rem;
+            color: #78716c;
+            margin-bottom: 0;
+        }
+
+        /* 提示框 */
+        .note-box {
+            background: #f5f5f4;
+            border-left: 3px solid #a8a29e;
+            padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.8rem 0;
+        }
+        .note-box p {
+            font-size: 0.9rem;
+            color: #57534e;
+            margin-bottom: 0.6rem;
+        }
+
+        /* FAQ 摘要 */
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #292524;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #57534e;
+            margin-left: 0.3rem;
+        }
+
+        /* 底部 */
+        .footer-links {
+            margin-top: 3.2rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e7e5e4;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.8rem;
+            font-size: 0.85rem;
+            color: #78716c;
+        }
+        .footer-links a {
+            color: #57534e;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        .footer-links a:hover {
+            border-bottom-color: #a8a29e;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 2rem 1rem 3rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Hero 区：简明定位 -->
+        <div class="hero">
+            <h1>爱游戏体育</h1>
+            <p class="subhead">从了解开始，一步步熟悉平台的界面、功能与日常使用方式。</p>
+        </div>
+
+        <!-- 优势区：三个维度 -->
+        <section>
+            <h2>为什么从这片指南入手</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>结构清晰</h3>
+                    <p>页面布局遵循常见习惯，菜单、赛事、内容分区明确。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>操作直观</h3>
+                    <p>主要功能按钮与导航路径都经过基础可用性考量。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>持续迭代</h3>
+                    <p>界面会根据用户反馈与项目阶段逐步调整。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>信息透明</h3>
+                    <p>关键说明与规则通常放置在显眼位置，方便查阅。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 说明区：访问提醒 + 简明指南 -->
+        <section>
+            <h2>访问前可以留意的几点</h2>
+            <p>如果你是第一次接触 <a href="https://webs-aigamesports.com">爱游戏体育</a>，建议先花几分钟熟悉整体结构。网站设计偏向内容聚合与活动展示，将常用模块放在了首页的直观区域。无论使用桌面端还是移动设备，页面都会自适应排列，减少缩放与横向滚动。</p>
+
+            <div class="note-box">
+                <p><strong>小提醒：</strong> 部分功能可能涉及账号相关操作，请确保在安全网络环境下进行。遇到任何不确定的页面或弹窗，先关闭并确认来源。</p>
+                <p><strong>关于内容：</strong> 站内提供的信息与说明均以实际页面展示为准，定期关注官方通知能帮助您了解最新调整。</p>
+            </div>
+
+            <p>为了获得较流畅的浏览体验，推荐使用最新版本的 Chrome、Edge 或 Safari 浏览器，并保持浏览器缓存定期清理。如果你在访问过程中发现加载异常，可以尝试刷新或稍后再试。</p>
+        </section>
+
+        <!-- FAQ 摘要：真实常见问题 -->
+        <section>
+            <h2>常见疑问摘要</h2>
+            <div class="faq-item">
+                <strong>如何快速找到某类内容？</strong>
+                <p>首页顶部通常设有分类入口，也可使用页面内的搜索功能（若有）。网站结构尽量简单，减少深层嵌套。</p>
+            </div>
+            <div class="faq-item">
+                <strong>移动端版面会不同吗？</strong>
+                <p>会针对手机屏幕进行适配，按钮和文字大小、间距会相应调整，确保可读性与可点按区域。</p>
+            </div>
+            <div class="faq-item">
+                <strong>是否需要注册才能浏览？</strong>
+                <p>大部分基础页面与信息可以公开访问，部分个性化功能或互动区域可能需要注册。具体以页面实际提示为准。</p>
+            </div>
+            <div class="faq-item">
+                <strong>页面语言支持哪些？</strong>
+                <p>当前以中文为主，未来可能根据用户群体增加其他语言选项。语言偏好一般可在页脚或设置中切换。</p>
+            </div>
+        </section>
+
+        <!-- 底部链接区 -->
+        <div class="footer-links">
+            <span><a href="https://webs-aigamesports.com">爱游戏体育</a> · 首页</span>
+            <span>使用帮助</span>
+            <span>隐私说明</span>
+            <span>联系支持</span>
+            <span style="opacity:0.6;">© 2025</span>
+        </div>
+
+    </div>
+</body>
+</html>
